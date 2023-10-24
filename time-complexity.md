@@ -89,3 +89,25 @@ def reverse(array):
 This algorithm runs in O(N) time. The fact that it only goes through half of the array (in terms of iterations) does not impact the big O time. Time Complexity = O(N). Space Complexity = O(1).
 
 ---
+**Example 07:**
+
+Given the following expressions, let's determine which of them are equivalent to O(N) and explain why:
+
+1. O(N + P), where P < X
+2. O(2N)
+3. O(N + log N)
+4. O(N + M)
+
+**Analysis:**
+
+1. O(N + P), where P < X: If P < X, then we know that N is the dominant term, so we can drop the O(P). This results in O(N).
+
+2. O(2N): O(2N) is equivalent to O(N) since we drop constants.
+
+3. O(N + log N): O(N) dominates O(log N), so we can drop the O(log N). This simplifies to O(N).
+
+4. O(N + M): There is no established relationship between N and M, so we have to keep both variables in there.
+
+Therefore, all expressions except the last one are equivalent to O(N).
+
+---
